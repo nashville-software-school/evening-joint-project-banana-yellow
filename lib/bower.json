@@ -14,10 +14,13 @@
   ],
   "dependencies": {
     "bootstrap": "~3.3.5",
+    "firebase": "~2.3.1",
     "handlebars": "~3.0.3",
     "jquery": "~2.1.4",
     "lodash": "~3.10.1",
+    "q": "~2.0.2",
     "require-handlebars-plugin": "~0.11.3",
     "requirejs": "~2.1.20"
-  }
+  },
+  "homepage": "https://github.com/nashville-software-school/evening-joint-project-banana-yellow"
 }
