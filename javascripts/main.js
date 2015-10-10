@@ -17,6 +17,8 @@ require(["jquery", "createUser"], function($, createUser) {
 
   $("#signupButton").click(function(e) {
 
+    e.preventDefault();
+
     console.log('Signup button clicked');
 
     var newMember = {
@@ -29,6 +31,7 @@ require(["jquery", "createUser"], function($, createUser) {
       "username": $("#username").val(),
       "password": $("#password").val()
     };
+
         
     console.log('newMember', newMember);
     

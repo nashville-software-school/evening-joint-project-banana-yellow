@@ -7,9 +7,9 @@ define(function(require) {
  	return {
 	 	
 	 	createMember: function(memberData) {
-
+	 		console.log('memberData', memberData);
 	    $.ajax({
-	      url: "https://forest-fires.firebaseio.com/forest-fires.json",
+	      url: "https://forest-fires.firebaseio.com/newMember.json",
 	      method: "POST",
 	      data: JSON.stringify(memberData)
 	      }).done(function(memberData) {
