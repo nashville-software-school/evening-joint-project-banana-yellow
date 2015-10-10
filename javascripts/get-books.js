@@ -4,7 +4,7 @@ define(function(require) {
   return {
     load: function(fn) {
       // This XHR does belong here
-      $.ajax("https://nss-book-store.firebaseio.com/books.json").done(function(books) {
+      $.ajax("https://forest-fires.firebaseio.com//forest-fires.json").done(function(books) {
         fn(books);
 
       });
