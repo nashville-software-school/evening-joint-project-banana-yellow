@@ -10,9 +10,11 @@ h1 {
 }
 
 .jumbotron {
-  opacity: .75;
-  background: ##FFFF99;
+  background: none;
   color: #e49a07;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .randbg {
@@ -69,7 +71,10 @@ h1 {
   font-size: 2.0em;
   color: #FFFF99;
   float: right;
-  padding-right: 2.7em
+  padding-right: 2.7em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .ontop {
@@ -79,4 +84,9 @@ h1 {
   float: right;
   z-index: 10;
   margin: 3em;
+}
+
+.btn {
+  color: #FFFF99;
+  background: #e49a07;
 }

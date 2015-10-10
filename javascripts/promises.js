@@ -1,4 +1,4 @@
-requirejs.config({
+,f,requirejs.config({
   baseUrl: './javascripts',
   paths: {
     'jquery': '../lib/bower_components/jquery/dist/jquery.min',
@@ -12,7 +12,7 @@ requirejs.config({
 });
 
 requirejs(
-  ["jquery", "hbs", "bootstrap", "get-books"], 
+  ["jquery", "hbs", "bootstrap", "get-books"],
   function($, Handlebars, bootstrap, books) {
 
     books.load(function(bookArray) {
