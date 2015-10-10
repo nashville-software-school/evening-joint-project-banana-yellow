@@ -9,13 +9,35 @@
   <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
-<body>
-<h1>PLEASE DATE ME</h1>
-  <div id="bookList">
-  
-  <script data-main="javascripts/promises" src="lib/bower_components/requirejs/require.js"></script>
+
+<body class = "randbg">
+  <a href="#"><img id = "logo" src ="/imgs/logo.png"></a>
+  <div class="jumbotron">
+    <h1>let somebody light your woods</h1>
+    <div class=""></div>
+  </div>
+  <div class=""></div>
+
 
 </body>
+<footer>
+  <div class="brownBar">
+    <div class="motto">america's <i>other</i> best idea</div>
+    </br>
+  </div>
+  <a class="btn btn-primary btn-lg ontop" href="#" role="button">start some fires</a>
+</footer>
+
+<script data-main="javascripts/promises" src="lib/bower_components/requirejs/require.js"></script>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="javascripts/rand.bg.js"></script>
+<script>
+  $(".randbg").RandBG({
+                  ClassPrefix: "bg",
+                  count: 10 });
+</script>
+
+
 </html>
 
 
