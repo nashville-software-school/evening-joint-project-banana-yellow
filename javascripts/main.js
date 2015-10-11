@@ -4,7 +4,8 @@ requirejs.config({
     'jquery': '../lib/bower_components/jquery/dist/jquery.min',
     'lodash': '../lib/bower_components/lodash/lodash.min',
     'hbs': '../lib/bower_components/require-handlebars-plugin/hbs',
-    'bootstrap': '../lib/bower_components/bootstrap/dist/js/bootstrap.min'
+    'bootstrap': '../lib/bower_components/bootstrap/dist/js/bootstrap.min',
+    'q': '../lib/bower_components/q/q'
   },
   shim: {
     'bootstrap': ['jquery']
@@ -17,14 +18,14 @@ require(["jquery", "createUser"], function($, createUser) {
 
   $("#signupButton").click(function(e) {
 
-    e.preventDefault();
+    // e.preventDefault();
 
     console.log('Signup button clicked');
 
     var newMember = {
       "firstName": $("#firstName").val(),
       "lastName": $("#lastName").val(),
-      // "id": $("#id").val(), 
+      "imgSrc": $("#imgSrc").val(),
       "interests": $("#interests").val(),
       "lookingFor": $("#lookingFor").val(),
       "park": $("#park").val(),
@@ -39,7 +40,17 @@ require(["jquery", "createUser"], function($, createUser) {
       
   }) // end click event handler
 
+})
+
+require(["jquery", "profiles", "q"], function($, profiles, q) {
+
+  profiles.loadProfiles()
+    .then(function(profileData){
+      console.log('profileData', profileData);
+    })
+
+})
 
 
-});
+
 
