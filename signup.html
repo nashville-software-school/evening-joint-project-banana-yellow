@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Forest Fires</title>
+
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+
+<body class = "randbg"> <!--this is for the background randomizer-->
+  <a href="#"><img id = "logo" src ="/imgs/logo.png"></a>
+
+  <!--page content-->
+  <div class = "moarBrown offset3">
+        <div class="input-group input-group-lg col-md-6">
+          <input type="text" class="form-control" id="firstName" placeholder="first name" aria-describedby="sizing-addon2">
+        </div>
+        <div class="input-group input-group-lg col-md-6">
+          <input type="text" class="form-control" id="lastName" placeholder="last name" aria-describedby="sizing-addon2">
+        </div>
+        <div class="input-group input-group-lg col-md-6">
+          <span class="input-group-addon" id="sizing-addon2">put a link to your profile pic</span>
+          <input type="text" class="form-control" id="imageSrc" placeholder="img_link.jpg" aria-describedby="sizing-addon2">
+        </div>
+        <div class="input-group col-md-6">
+          <span class="input-group-addon" id="sizing-addon2">interests</span>
+          <input type="text" class="form-control" id="interests" placeholder="bear roping, warning youths about the dangers of bears, making bear jerky" aria-describedby="sizing-addon2">
+        </div>
+        <div class="input-group col-md-6">
+          <span class="input-group-addon" id="sizing-addon2">park</span>
+          <input type="text" class="form-control" id="park" placeholder="Yosemite National Park" aria-describedby="sizing-addon2">
+        </div>
+        <div class="input-group col-md-6">
+          <input type="text" class="form-control" id="username" placeholder="username" aria-describedby="sizing-addon2">
+        </div>
+        <div class="input-group col-md-6">
+          <input type="text" class="form-control" id="password" placeholder="password" aria-describedby="sizing-addon2">
+        </div>
+  </div>
+<div class="spacer col-md-3"></div>
+</body>
+
+<!-- brownbar footer -->
+
+<footer>
+  <div class="brownBar">
+    <div class="motto">america's <i>other</i> best idea</div>
+    </br>
+  </div>
+  <a class="btn btn-primary btn-lg ontop" id="signupButton" href="#" role="button">start a fire!</a>
+</footer>
+
+<!-- scripts -->
+
+<script data-main="javascripts/promises" src="lib/bower_components/requirejs/require.js"></script>
+
+<!-- jquery cdn, kill this in final. -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- background randomizer -->
+
+<script src="javascripts/rand.bg.js"></script>
+<script>
+  $(".randbg").RandBG({
+                  ClassPrefix: "bg",
+                  count: 10 });
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+

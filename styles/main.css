@@ -1,6 +1,4 @@
-h1 {
-  text-align: center;
-  color: purple; }
+/*logo*/
 
 #logo {
     height: auto;
@@ -9,13 +7,19 @@ h1 {
     max-height: 100px;
 }
 
+
+/*light  fires*/
+
 .jumbotron {
   background: none;
+  text-align: center;
   color: #e49a07;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
 }
+
+/*backround randomizer*/
 
 .randbg {
   background: url('/imgs/parks/olympic.jpg') no-repeat center center fixed;
@@ -57,6 +61,8 @@ h1 {
   background-image: url('../imgs/parks/olympic.jpg');
 }
 
+/*footer*/
+
 .brownBar {
   background-color: #553D0D;
   width:100%;
@@ -66,6 +72,8 @@ h1 {
   left:0;
   opacity: .75;
 }
+
+/* America's other best idea*/
 
 .motto {
   font-size: 2.0em;
@@ -77,6 +85,8 @@ h1 {
              0px 18px 23px rgba(0,0,0,0.1);
 }
 
+/*this is to pull the button on top of the brownBar div, to retain it's opacity*/
+
 .ontop {
   position: absolute;
   bottom: 0;
@@ -86,7 +96,26 @@ h1 {
   margin: 3em;
 }
 
+/*changing the bootstrap btns default color*/
+
 .btn {
   color: #FFFF99;
   background: #e49a07;
+}
+
+/* --- exculsive to signup page ---*/
+
+.moarBrown {
+  /*background-color: #553D0D;*/
+  width:100%;
+  bottom:0;
+  left:0;
+  opacity: .85;
+  color: #FFFF99;
+  margin: 0 auto;
+}
+
+.input-group {
+  /*margin: 1em 4em 1em 15em;*/
+  margin: .5% 10% .5% 10%;
 }
