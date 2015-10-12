@@ -38,9 +38,9 @@ require(["jquery", "createUser"], function($, createUser) {
 
     createUser.createMember(newMember);
 
-  }) // end click event handler
+  }); // end click event handler
 
-})
+});
 
 require(["jquery", "profiles", "q", "hbs!../templates/memberProfiles"], function($, profiles, q, memTempl) {
 
@@ -52,6 +52,6 @@ require(["jquery", "profiles", "q", "hbs!../templates/memberProfiles"], function
       newMembers = profileData;
       console.log('newMembers', newMembers);
     $('#profileDisplay').append(memTempl({newMembers: newMembers}));
-    })
+    });
 
-})
+});

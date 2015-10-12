@@ -8,14 +8,14 @@ define(function(require) {
       $.ajax({
         url:"http://forest-fires.firebaseio.com/newMember.json"
       }).done(function(profiles) {
-        defered.resolve(profiles);
+        deferred.resolve(profiles);
         console.log("Ajax Profiles = ", profiles);
       })// End of ajax call
         .fail(function(xhr, status, error) {
-          deffered.reject(error);
+          deferred.reject(error);
         });
-        console.log("Ajax Profiles Promise", defered.promise);
-        return defered.promise;
+        console.log("Ajax Profiles Promise", deferred.promise);
+        return deferred.promise;
     }// End of loadProfiles function
   }; // End of return
 }); //
