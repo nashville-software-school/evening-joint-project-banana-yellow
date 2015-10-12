@@ -1,5 +1,3 @@
-
-
 window.onload=(function (jQuery, Firebase, Path) {
     "use strict";
 
