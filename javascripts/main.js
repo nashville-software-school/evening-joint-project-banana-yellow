@@ -33,7 +33,7 @@ require(["jquery", "createUser"], function($, createUser) {
       "email": $("#email").val(),      
       "password": $("#password").val()
     };
-
+// 
         
     console.log('newMember', newMember);
     
