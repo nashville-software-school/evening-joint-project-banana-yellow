@@ -30,6 +30,7 @@ require(["jquery", "createUser"], function($, createUser) {
       "lookingFor": $("#lookingFor").val(),
       "park": $("#park").val(),
       "username": $("#username").val(),
+      "email": $("#email").val(),      
       "password": $("#password").val()
     };
 
