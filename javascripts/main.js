@@ -45,14 +45,14 @@ require(["jquery", "createUser"], function($, createUser) {
 
 require(["jquery", "profiles", "q", "hbs!../templates/memberProfiles"], function($, profiles, q, memTempl) {
 
-  var newMembers;
+  // var newMembers;
 
   profiles.loadProfiles()
     .then(function(profileData) {
       console.log('profileData', profileData);
-      newMembers = profileData;
-      console.log('newMembers', newMembers);
-    $('#profileDisplay').append(memTempl({newMembers: newMembers})); 
+      // newMembers = profileData;
+      // console.log('newMembers', newMembers);
+    $('#profileDisplay').append(memTempl({newMembers: profileData})); 
     })
     
 })
