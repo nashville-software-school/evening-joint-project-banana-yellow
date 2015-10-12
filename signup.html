@@ -5,12 +5,14 @@
 </head>
 <body>
 
+	
 	<form>	
 		<div>First Name:<input type="text" id="firstName" /></div>
 		<div>Last Name:<input type="text" id="lastName" /></div>
-		<div>Interests:<textarea cols="15" rows="2"></textarea></div>
+		<div>Enter Your Profile Picture URL:<textarea rows="1" cols="35" id="imageSrc"></textarea></div>
+		<div>Interests:<textarea id="interests" cols="15" rows="2"></textarea></div>
 		<div>Looking For:
-			<select>
+			<select id="lookingFor">
 				<option value="Man" />Man
 				<option value="Woman" />Woman
 			</select>
@@ -20,7 +22,9 @@
 		<div>Password:<input type="text" id="password" /></div> 
 		<button id="signupButton">Start a Fire!</button>
 	</form>
-
+	
+	<a href="browse.html" id="browseUsers">Find Other Forest Fire Members</a>
+	
 <script data-main="javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
 
 </body>

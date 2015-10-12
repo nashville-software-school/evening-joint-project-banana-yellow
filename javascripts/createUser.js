@@ -1,7 +1,5 @@
 define(function(require) {
-
 	var $ = require('jquery');
-
 	// console.log('module check');
 
  	return {
@@ -15,10 +13,6 @@ define(function(require) {
 	      }).done(function(memberData) {
 	      console.log('Go start a fire!');
 	      });
-
 	    } // end xhr request
-
 	}; // end return statement
-
-
 });
