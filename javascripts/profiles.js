@@ -1,12 +1,12 @@
 define(function(require) {
-  var = _ re("lodash");
-  var = $ ("jquery");
-
+  // var _ = require("lodash");
+  var $ = require("jquery");
+  var q = require("q");
   return {
     loadProfiles: function () {
       var deferred = q.defer();
       $.ajax({
-        url:"http://forest-fires.firebaseio.com"
+        url:"http://forest-fires.firebaseio.com/newMember.json"
       }).done(function(profiles) {
         defered.resolve(profiles);
         console.log("Ajax Profiles = ", profiles);
@@ -18,4 +18,4 @@ define(function(require) {
         return defered.promise;
     }// End of loadProfiles function
   }; // End of return
-}) //
+}); //
