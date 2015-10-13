@@ -2,6 +2,7 @@ define(function(require) {
   // var _ = require("lodash");
   var $ = require("jquery");
   var q = require("q");
+
   return {
     loadProfiles: function () {
       var deferred = q.defer();

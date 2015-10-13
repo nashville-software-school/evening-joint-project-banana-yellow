@@ -1,7 +1,15 @@
 {{#each newMembers}}
-<img  src={{ imageSrc }} style= "height: 100px; width: 100px;">
-	<h3>{{ firstName }} {{ lastName  }}</h3>
-	<div>I'm looking to meet a {{ lookingFor }} near {{ park }}</div>
-	<div>My Interests</div>
-	<div>-{{ interests }}</div>
+	<div class="media">
+	  <div class="media-left">
+	    <a href="#">
+	      <img class="media-object" src={{ imageSrc }} style="height: 150px; width: 150px;">
+	    </a>
+	  </div>
+	  <div class="media-body">
+			<h3 class="media-heading">{{ firstName }} {{ lastName  }}</h3>
+			<div>I'm looking to meet a <b>{{ lookingFor }}</b> near <b>{{ park }}</b></div>
+			<div>My Interests</div>
+			<div>{{ interests }}</div>
+	  </div>
+	</div>
 {{/each}}

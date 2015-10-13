@@ -30,9 +30,9 @@ require(["jquery", "createUser"], function($, createUser) {
       "lookingFor": $("#lookingFor").val(),
       "park": $("#park").val(),
       "username": $("#username").val(),
+      "email": $("#email").val(),
       "password": $("#password").val()
     };
-
 
     console.log('newMember', newMember);
 
@@ -44,14 +44,13 @@ require(["jquery", "createUser"], function($, createUser) {
 
 require(["jquery", "profiles", "q", "hbs!../templates/memberProfiles"], function($, profiles, q, memTempl) {
 
-  var newMembers;
 
   profiles.loadProfiles()
     .then(function(profileData) {
       console.log('profileData', profileData);
-      newMembers = profileData;
-      console.log('newMembers', newMembers);
-    $('#profileDisplay').append(memTempl({newMembers: newMembers}));
-    });
-
+      // newMembers = profileData;
+      // console.log('newMembers', newMembers);
+    $('#profileDisplay').append(memTempl({newMembers: profileData}));
+    })
+  })
 });
