@@ -33,7 +33,6 @@ require(["jquery", "createUser"], function($, createUser) {
       "email": $("#email").val(),      
       "password": $("#password").val()
     };
-
         
     console.log('newMember', newMember);
     
@@ -45,9 +44,6 @@ require(["jquery", "createUser"], function($, createUser) {
 
 require(["jquery", "profiles", "q", "hbs!../templates/memberProfiles"], function($, profiles, q, memTempl) {
 
-  // Change for git
-
-  // var newMembers;
 
   profiles.loadProfiles()
     .then(function(profileData) {
