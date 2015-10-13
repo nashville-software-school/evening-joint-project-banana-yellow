@@ -51,6 +51,5 @@ require(["jquery", "profiles", "q", "hbs!../templates/memberProfiles"], function
       // newMembers = profileData;
       // console.log('newMembers', newMembers);
     $('#profileDisplay').append(memTempl({newMembers: profileData}));
-    })
-  })
-});
+    });
+  });
