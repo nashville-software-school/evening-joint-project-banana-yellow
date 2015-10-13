@@ -1,13 +1,47 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 <head>
-	<title>Forest Fire Users</title>
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+  <meta charset="utf-8">
+  <title>Forest Fires</title>
+
+  <link rel="stylesheet" type="text/css" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body>
-	<h2>Users</h2>
-	<div id="profileDisplay"></div>
-<script data-main="javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
+
+
+<body class = "randbg"> <!--this is for the background randomizer-->
+  <a href="/index.html"><img id = "logo" src ="/imgs/logo.png"></a>
+
+  <!--page content-->
+  <div class = "moarBrown offset3">
+    <div id="profileDisplay"></div>
+  </div>
 </body>
+
+<!-- brownbar footer -->
+
+<footer>
+  <div class="brownBarBrowse">
+    <div class="motto">america's <i>other</i> best idea</div>
+    </br>
+  </div>
+</footer>
+
+<!-- scripts -->
+
+<script data-main="javascripts/main" src="lib/bower_components/requirejs/require.js"></script>
+
+<!-- jquery cdn, kill this in final. -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- background randomizer -->
+
+<script src="javascripts/rand.bg.js"></script>
+<script>
+  $(".randbg").RandBG({
+                  ClassPrefix: "bg",
+                  count: 10 });
+</script>
+
 </html>
-<!--  -->
